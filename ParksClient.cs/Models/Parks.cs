@@ -18,7 +18,7 @@ namespace ParksClient.Models
     [Range(0, 10, ErrorMessage = "Rating must be between 0 and 10.")]
     public int Rating { get; set; 
 
-    public static List<Parks> GetParks()
+    public static List<Park> GetParks()
     {
       var apiCallTask = ApiHelper.GetAll();
       var result = apiCallTask.Result;
@@ -49,7 +49,7 @@ namespace ParksClient.Models
     public static void Put(Park park)
     {
       string jsonPark = JsonConvert.SerializeObject(park);
-      ApiHelper.Put(Park.ParkId, jsonPark);
+      ApiHelper.Put(park.ParkId, jsonPark);
     }
 
       public static void Delete(int id)
@@ -57,7 +57,7 @@ namespace ParksClient.Models
       ApiHelper.Delete(id);
     }
 
-    public static Park Randompark(int id)
+    public static Park RandomPark(int id)
     {
       var apiCallTask = ApiHelper.Get(id);
       var result = apiCallTask.Result;
