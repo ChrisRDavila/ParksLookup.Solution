@@ -1,3 +1,6 @@
+using System.Threading.Tasks;
+using RestSharp;
+
 namespace ParksClient.Models
 {
   public class ApiHelper
