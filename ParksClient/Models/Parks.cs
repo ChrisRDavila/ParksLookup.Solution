@@ -16,7 +16,7 @@ namespace ParksClient.Models
     [Required(ErrorMessage = "The park's features can't be empty!")]
     public string Features { get; set; }
     [Range(0, 10, ErrorMessage = "Rating must be between 0 and 10.")]
-    public int Rating { get; set; 
+    public int Rating { get; set; }
 
     public static List<Park> GetParks()
     {

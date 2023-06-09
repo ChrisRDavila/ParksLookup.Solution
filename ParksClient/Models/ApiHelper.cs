@@ -30,7 +30,7 @@ namespace ParksClient.Models
       await client.PostAsync(request);
     }
 
-    public static async void Put(int id, string newPark
+    public static async void Put(int id, string newPark)
     {
       RestClient client = new RestClient("http://localhost:5000/");
       RestRequest request = new RestRequest($"api/parks/{id}", Method.Put);
@@ -47,7 +47,7 @@ namespace ParksClient.Models
       await client.DeleteAsync(request);
     }
 
-    public static async Task<string> RandomAnimal()
+    public static async Task<string> RandomPark()
     {
       RestClient client = new RestClient("https://localhost:5001/");
       RestRequest request = new RestRequest($"api/parks/random", Method.Get);
