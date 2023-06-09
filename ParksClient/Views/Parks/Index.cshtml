@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Parks";
+}
+
+@using ParksClient.Models;
+
+<h1>All National Parks</h1>
+
+<h3>Actions:</h3>
+
+<p>@Html.ActionLink("Add a new park", "Create")</p>
+
+<h3>Parks:</h3>
+<ol>
+@foreach (Park park in Model)
+{
+  <li><strong>@park.Name</strong> in @park.State | <a href="/Parks/Details/@(park.ParkId)">View Details</a></li>
+}
+</ol>

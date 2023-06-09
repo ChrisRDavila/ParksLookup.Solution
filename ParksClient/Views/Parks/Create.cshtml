@@ -1,0 +1,28 @@
+@{
+  ViewData["Title"] = "Create Animal";
+}
+
+@model ParksClient.Models.Park
+
+<h4>Add a new park to our Park registry</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+  <br>
+  @Html.LabelFor(model => model.State)
+  @Html.TextBoxFor(model => model.State)
+  <br>
+  @Html.LabelFor(model => model.Features)
+  @Html.TextBoxFor(model => model.Features)
+  <br>
+  @Html.LabelFor(model => model.Rating)
+  @Html.TextBoxFor(model => model.Rating)
+  <br>
+  <br>
+  <input type="submit" value="Add new rating" class="btn btn-primary"/>
+}
+
+<br>
+<p>@Html.ActionLink("Back to all ratings", "Index")</p>
