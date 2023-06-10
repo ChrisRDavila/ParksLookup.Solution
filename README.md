@@ -1,23 +1,31 @@
-# (Application Name) remove parens
+# Parks Look up
 
-#### (Brief Description of Application) remove parens
+#### This is a C# MVC app for a client side relationship to connect with ParksLookUpAPI.Solution to set up User Interface to interact with and make calls to the API library and recieve and change the database without need of postman or swagger
 
-#### By (Your Name Here) remove parans
+#### By Christopher Davila
 
 ## Technologies Used
 
 * _dot net 6_
-* _cshtml_
+* _CSS_
 * _C#_
+* _CSHTML_
 * _ASP Core MVC_
-_MS Build_
+* _MS Build_
+* _RestSharp_
+* _Entity Framework_
+* _MySQL Workbench_
+* _GitHub_
+* _VS Code_
+* _NewtonSoft Json_
+
 
 
 ## Description
+# This is client side MVC application to consume the application ParksLookUpAPI.Soluion. API calls are made from this application to recieve the data stored and created in the API application
 
 ## Setup/Installation Requirements
 
-<!-- Going forward, don't forget to include setup instructions in your README for an appsettings.json with a database connection string. -->
 
 * _1. Clone this repo._
 * _X. _dotnet add package MySqlConnector -v 2.2.0_
